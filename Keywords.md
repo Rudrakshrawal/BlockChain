@@ -100,7 +100,7 @@
         * Both parties use the received public keys and their own private keys to compute the shared secret key.
         * The calculated shared secret K is the same for both parties, even though they never directly exchanged their private keys. This shared secret can then be used as a symmetric encryption key for secure communication.
 ----------
-# Establishing a secure connection between a client and a server in HTTPS.
+# Establishing a secure connection between a client and a server in HTTPS. 🔐👩‍💻🚏🏢
 
 * _Server Certificate Check_:
 * * The client (e.g., a web browser) initiates a connection request to the server (e.g., a website) and receives the server's digital certificate.

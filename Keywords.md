@@ -1,4 +1,4 @@
-# Keywords
+# Keywords 🧠
 --------
 1. **Blockchain**:   The decentralized and distributed ledger technology that securely records transactions across a network of computers.
 2. **Cryptocurrency**:Digital or virtual currency that uses cryptography for security and operates on decentralized networks, often based on blockchain.
@@ -29,7 +29,7 @@
 27. **Digital signing authority**:  a digital signing authority plays a critical role in enabling secure digital communications by issuing trusted digital certificates and digital signatures, which help verify the authenticity and integrity of digital content and transactions.
 28. **Session key**:  a session key is a temporary cryptographic key used to encrypt and decrypt data exchanged during a single communication session, providing confidentiality, integrity, and enhanced security for the communication. Made with the help of public key. 
 ------------
-## Algorithms:
+## Algorithms: 🧮
 - Advanced Encryption Standard (AES):
 **_AES is a symmetric encryption algorithm established as a standard by the U.S. National Institute of Standards and Technology (NIST) in 2001_**.
   * Key Sizes: AES supports key sizes of 128, 192, or 256 bits.
@@ -39,7 +39,7 @@
      * AES key - The AES key is a binary sequence of bits that determines how the encryption and decryption processes are applied. The length of the key significantly influences the security of the encryption.
 
 
-- Shor's algorithm:
+- Shor's algorithm: ⁉️
   **_A groundbreaking algorithm that can efficiently factor large integers, a task that classical computers struggle with._**
   * Purpose: Shor's algorithm is designed to efficiently factorize large integers into their prime factors.
   * Impact: If large-scale quantum computers are realized, Shor's algorithm would break widely used public-key cryptosystems, including RSA, by efficiently factorizing the product of large prime numbers.
@@ -70,7 +70,7 @@
 
 
  
-- Double rachet algorithm:
+- Double rachet algorithm: ⁉️
   **_The Double Ratchet Algorithm is a cryptographic algorithm used for secure end-to-end messaging with forward secrecy and message synchronization. It is commonly used in secure messaging applications like Signal and WhatsApp._**
 
 
@@ -117,10 +117,11 @@
  
  ### _The process of establishing a secure connection involves verifying the server's certificate, performing a key exchange to establish a shared secret key, and using symmetric-key cryptography to encrypt data transmitted over the connection. This ensures confidentiality, integrity, and authenticity of the communication between the client and server._
 --------
+# ENCRYPTION 🔐
 *  **Encryption:** Encryption is a process that transforms information into an unreadable format using an algorithm and a key.Encryption is a process that converts readable data (plaintext) into an unreadable form (ciphertext) using an algorithm and a key. It ensures data confidentiality and security by making information inaccessible without the proper decryption key.
   * Types of encryption:
      * Symmetric encryption - {Is the one which even the Quantum computers can't break}
-     * * **_Symmetric encryption is a cryptographic technique where the same key is used for both encryption and decryption of data. Symmetric encryption is a cryptographic technique where a single secret key is used for both encryption and decryption. It is efficient, fast, and well-suited for encrypting large volumes of data, but the security relies on keeping the key secret from unauthorized parties. _**
+     * * **_Symmetric encryption is a cryptographic technique where the same key is used for both encryption and decryption of data. Symmetric encryption is a cryptographic technique where a single secret key is used for both encryption and decryption. It is efficient, fast, and well-suited for encrypting large volumes of data, but the security relies on keeping the key secret from unauthorized parties._**
        * common algorithms used : DES, AES
 
 
@@ -131,7 +132,7 @@
 
 
    * Asymmetric encryption -
-   * * **_Asymmetric encryption, also known as public-key cryptography, is a cryptographic technique that uses two different keys: a public key and a private key. _**
+   * * **_Asymmetric encryption, also known as public-key cryptography, is a cryptographic technique that uses two different keys: a public key and a private key._**
      * common algorithms used : RSA, ECC
 
 
@@ -139,7 +140,7 @@
 ![image](https://github.com/Rudrakshrawal/BlockChain/assets/144530387/6c0a16d2-baa8-460b-a90b-14491921ca0e)
 
 ----------------------
-## The three Cryptographic algorithms.
+## The three Cryptographic algorithms. 💻⚛️🧮
 - **Ceiser/Cipher**: his is one of the simplest and oldest encryption techniques. it involves shifting each letter in the plaintext by a fixed number of positions down or up the alphabet.
 - **Classic**: This term generally refers to traditional cryptographic techniques used before the advent of modern computer-based cryptography. 
 - **Post Quantum**: This refers to cryptographic algorithms and protocols designed to be secure against attacks by quantum computers

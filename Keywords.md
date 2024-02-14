@@ -27,7 +27,40 @@
 25. **ECC (Eliptic curve cryptography)** : ECC(Just like RSA ,it uses public & private key) provides efficient and secure cryptographic operations based on the mathematical properties of elliptic curves, making it a valuable tool in modern cryptography.
 26. **HTTP 1/2/3**: major version of the Hypertext Transfer Protocol (HTTP). People as of the now(feb 2024) are preffering to shift to the second version whereas the third version is also gaining momentum, but will take time to be adapted.
 27. **Digital signing authority**:  a digital signing authority plays a critical role in enabling secure digital communications by issuing trusted digital certificates and digital signatures, which help verify the authenticity and integrity of digital content and transactions.
-28. **Session key**:  a session key is a temporary cryptographic key used to encrypt and decrypt data exchanged during a single communication session, providing confidentiality, integrity, and enhanced security for the communication. Made with the help of public key. 
+28. **Session key**:  a session key is a temporary cryptographic key used to encrypt and decrypt data exchanged during a single communication session, providing confidentiality, integrity, and enhanced security for the communication. Made with the help of public key.
+_29_. ****Interoperability**: Interoperability is a characteristic of a product or system to work with other products or systems.** It is a very very important term in the whole Computer Science.
+30. **Self Soverign Identity(SSI)**:self-sovereign identity (SSI), is a concept within decentralized identity management that emphasizes the individual's complete control over their own digital identity. It is based on the principles of privacy, autonomy, and user-centricity.
+31. **Digital Identities:** Digital identities refer to the online representations of individuals, organizations, or things in digital form. These identities consist of information that uniquely identifies and distinguishes entities in the digital realm.
+32. **Decentralised Identity:** Decentralized identity refers to a concept where individuals have control over their own digital identities without relying on a central authority or intermediary. Decentralized identity solutions leverage blockchain technology to enable individuals to manage their identities directly, providing greater privacy, security, and control over personal data.
+33. **SSO(single sign on):** Single sign-on is an authentication scheme that allows a user to log in with a single ID to any of several related, yet independent, software systems.An example of Single Sign-On (SSO) is when you use your Google account to log in to various services like Gmail, Google Drive, and YouTube without having to enter your credentials separately for each service.
+34. **ERC(Etherium request for comments)**: ERC stands for Ethereum Request for Comments and refers to proposals for technical standards and protocols within the Ethereum ecosystem, facilitating interoperability and compatibility among Ethereum-based applications
+35. **ICO(Initial Coin Offering):** An Initial Coin Offering (ICO) is a fundraising method used by cryptocurrency startups, where new tokens or coins are sold to investors in exchange for legal tender or other cryptocurrencies, typically to fund the development of a new project or platform.
+36. **DEFI:** DeFi, short for Decentralized Finance, refers to a collection of financial services and applications built on blockchain technology, typically Ethereum, that aim to provide traditional financial services such as lending, borrowing, trading, and asset management in a decentralized manner, without the need for traditional financial intermediaries like banks or brokerages.
+37. **Farming:** typically refers to a practice known as yield farming. Yield farming involves participants providing liquidity to decentralized finance protocols in exchange for rewards, often in the form of additional tokens or a percentage of transaction fees. This process helps to incentivize liquidity provision and bootstrap adoption of decentralized platforms, while also allowing participants to earn passive income on their cryptocurrency holdings.
+38. **Identity:**  in the context of technology and digital systems refers to the unique characteristics or attributes that distinguish one individual from another in the digital realm.
+39. **POW**: It's a consensus mechanism used in blockchain networks, including Bitcoin and Ethereum, to validate and confirm transactions and secure the network.
+40. **POS**:"PoS" stands for "Proof of Stake." It's a consensus mechanism used in blockchain networks to validate and confirm transactions and secure the network.
+   * Proof of Work (PoW): Miners compete to solve complex puzzles, requiring significant computational power and energy consumption. Security relies on the computational difficulty of puzzles.
+   * Proof of Stake (PoS): Validators are chosen to create new blocks based on the amount of cryptocurrency they hold and are willing to stake. Energy-efficient as it doesn't require intense computations. Security relies on validators staking their own assets.
+40. **CBDC(Central bank digital currency)**: Central Bank Digital Currency (CBDC) refers to a digital form of central bank-issued currency. Unlike cryptocurrencies such as Bitcoin or Ethereum, which are decentralized and operate on public blockchain networks, CBDCs are issued and regulated by central banks, making them a form of digital fiat currency.
+------------
+## Layers in blockchain
+
+
+
+![image](https://github.com/Rudrakshrawal/BlockChain/assets/144530387/15bfde1b-4854-4c69-8959-88d95f59f00a)
+
+
+
+- _Layer 3_: Application Layer: This layer encompasses the various applications, services, and use cases built on top of the blockchain network. It includes decentralized applications (DApps), smart contracts, and protocols that enable specific functionalities and interactions within the blockchain ecosystem.
+- _Layer 2_: Layer 2 in the context of blockchain technology typically refers to solutions that are built on top of the underlying blockchain protocol to improve scalability, reduce transaction costs, and enhance functionality.
+  * Some common examples of Layer 2 solutions include:
+    * Off-chain Scaling Solutions: These solutions involve conducting transactions off the main blockchain to reduce congestion and improve scalability.
+    * dechains: Sidechains are separate blockchains that are interoperable with the main blockchain. They enable faster transaction processing and experimentation with new features and protocols while still benefiting from the security of the main chain.
+    * State Channels: State channels allow participants to conduct numerous transactions off-chain while only settling the final state on the main blockchain. This approach significantly reduces transaction fees and latency.
+
+- _Layer 1_: Layer 1 in the context of blockchain technology refers to the foundational layer of a blockchain network. It encompasses the core protocol and consensus mechanism that define how the blockchain operates.
+- _Layer 0_: Layer 0 focuses on the physical aspects of blockchain operation, such as the hardware and infrastructure required for data transfer and mining activities. It provides the foundation upon which the higher layers of the blockchain network, including the consensus mechanism, protocol rules, and application layers, operate.
 ------------
 ## Algorithms: 🧮
 - Advanced Encryption Standard (AES):
@@ -100,6 +133,16 @@
         * Both parties use the received public keys and their own private keys to compute the shared secret key.
         * The calculated shared secret K is the same for both parties, even though they never directly exchanged their private keys. This shared secret can then be used as a symmetric encryption key for secure communication.
 ----------
+## WEB 1,2 & 3
+
+
+![image](https://github.com/Rudrakshrawal/BlockChain/assets/144530387/4322b1c9-7972-4466-b84b-46873f02f6c1)
+
+### Web 1
+
+
+
+----------
 # Establishing a secure connection between a client and a server in HTTPS. 🔐👩‍💻🚏🏢
 
 * _Server Certificate Check_:
@@ -140,7 +183,11 @@
 ![image](https://github.com/Rudrakshrawal/BlockChain/assets/144530387/6c0a16d2-baa8-460b-a90b-14491921ca0e)
 
 ----------------------
-## The three Cryptographic algorithms. 💻⚛️🧮
+## The three Cryptographic algorithms . 💻⚛️🧮
+* _RSA (Rivest-Shamir-Adleman)_: RSA is a widely used asymmetric encryption algorithm for securing data transmission. It relies on the mathematical properties of large prime numbers to encrypt and decrypt messages. RSA is commonly used in secure communication protocols such as SSL/TLS for securing internet traffic.
+* _AES (Advanced Encryption Standard_): AES is a symmetric encryption algorithm used to secure sensitive data. It operates on fixed-size blocks of data and uses a symmetric key for both encryption and decryption. AES is widely adopted and considered highly secure for various applications, including data encryption in storage and communication protocols.
+* _SHA-256 _(Secure Hash Algorithm 256-bit): SHA-256 is a cryptographic hash function that generates a fixed-size output (256 bits) known as a hash value or digest. It is commonly used for data integrity verification and digital signatures. SHA-256 is used in various applications such as blockchain technology (Bitcoin, Ethereum), digital certificates, and password hashing.
+## The three phases of the encryption(s)
 - **Ceiser/Cipher**: his is one of the simplest and oldest encryption techniques. it involves shifting each letter in the plaintext by a fixed number of positions down or up the alphabet.
 - **Classic**: This term generally refers to traditional cryptographic techniques used before the advent of modern computer-based cryptography. 
 - **Post Quantum**: This refers to cryptographic algorithms and protocols designed to be secure against attacks by quantum computers
@@ -149,3 +196,5 @@
 # Extras.. Or some things idk where to put😃👍..
 ### What is wire shark?
 - Wireshark is a versatile and powerful tool for network administrators, security professionals, developers, and anyone else who needs to analyze and troubleshoot network communication. It helps users gain insight into network behavior, diagnose network problems, and ensure the security and efficiency of computer networks.
+### Uniswap?
+- Uniswap is a decentralized cryptocurrency exchange (DEX) protocol built on the Ethereum blockchain. It allows users to swap various ERC-20 tokens directly with each other without the need for an intermediary or order book. Uniswap utilizes liquidity pools and automated market-making algorithms to facilitate trading, where users can provide liquidity by depositing tokens into these pools and earn fees in return. It's known for its simple user interface and permissionless nature, enabling anyone with an Ethereum wallet to participate in decentralized trading.

@@ -1,6 +1,8 @@
 # Blockchain Repository
 -----------------
 [BlockchainEasily]( https://medium.com/@rsshb/diving-in-blockchain-8131be56bb26)
+
+---------------
 Welcome to the Blockchain Repository! This repository is dedicated to exploring the fundamental concepts and history of blockchain technology.
 ![IMG_2897](https://github.com/Rudrakshrawal/BlockChain/assets/144530387/479a7881-a3cc-40f0-8d56-a2b61f5fa0ec)
 ---------------

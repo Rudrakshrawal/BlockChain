@@ -1,4 +1,3 @@
-<img width="541" alt="image" src="https://github.com/Rudrakshrawal/BlockChain/assets/144530387/322f5def-88fc-4b8b-a05d-15b7025df4da"># Setting environment
 
 ## Install docker on OS
 https://hub.docker.com

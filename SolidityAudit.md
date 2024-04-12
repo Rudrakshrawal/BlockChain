@@ -1,4 +1,4 @@
-# Setting environment
+<img width="541" alt="image" src="https://github.com/Rudrakshrawal/BlockChain/assets/144530387/322f5def-88fc-4b8b-a05d-15b7025df4da"># Setting environment
 
 ## Install docker on OS
 https://hub.docker.com
@@ -9,8 +9,9 @@ https://hub.docker.com
 ------
 # Solidity Audit Tools
 Solgraph : ```docker pull devopstestlab/solgraph```
-Mythril : ```docker pull mythril/myth```
 Slither : ```docker pull trailofbits/eth-security-toolbox```
+Surya : ``` npm install -g surya```
+
 
 ------
 _**You can chek the path for files using the command :**_ 
@@ -52,12 +53,27 @@ _**You can chek the path for files using the command :**_
 
 
 ----------
-## For mythrill
-- ```docker pull mythril/myth``` This will pull the docker image of mythrill
-- 
+## For surya [For reference](https://github.com/Consensys/surya/blob/master/README.md)
+- ```npm install -g surya``` This will install the surya audit package
+- ```brew install graphviz``` This will install graphwiz which has the dot function
+- The `graph` command outputs a DOT-formatted graph of the control flow.
+```shell
+surya graph contracts/**/*.sol | dot -Tpng > MyContract.png
+```
+<img width="541" alt="image" src="https://github.com/Rudrakshrawal/BlockChain/assets/144530387/cc0ab70c-82a8-465c-96f5-eaf42ca4c1fa">
 
+- The `ftrace` command outputs a _treefied_ function call trace stemming from the defined "CONTRACT::FUNCTION" and traversing "all|internal|external" types of calls.
+External calls are marked in `orange` and internal calls are `uncolored`.
+```shell
+surya ftrace APMRegistry::_newRepo all MyContract.sol
+```
+- The `describe` command shows a summary of the contracts and methods in the files provided.
+```shell
+surya describe *.sol
+```
+- to get the Tpng image ```surya graph SimpleStorage1.sol | dot -Tpng > MyContract.png```
 
-
+--------------------------
 
 
 

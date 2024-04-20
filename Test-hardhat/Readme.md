@@ -15,6 +15,8 @@
     - [Adding Hardhat Toolbox](#adding-hardhat-toolbox)
     - [Modifying the Hardhat Configuration](#modifying-the-hardhat-configuration)
     - [Compiling Contracts](#compiling-contracts)
+    - [Checking usage](#check-usage-by-test)
+    - [Checking Gas price](#check-gas-price)
     - [Deploying Contracts](#deploying-contracts)
 
 ## Setting up the Environment
@@ -95,6 +97,42 @@ npx hardhat compile
 <img width="170" alt="image" src="https://github.com/Rudrakshrawal/BlockChain/assets/144530387/81e8dfa1-650f-49aa-b79b-3e8a9ea57148">
 
 ##### The above are the files that will be created when you compile your solidity file . Sometimes when there are errors after compiling, you can try deleting these two files and compiling them again.
+
+
+### Check usage by test
+(OPTIONAL)
+
+
+We will also be trying to check the usage of the test i.e how many % of functions are being used. To check that we first will be needing to install the package ```npm install --save-dev solidity-coverage ```
+
+
+
+After this we will be adding a simple line in the ```hardhat.config.js``` file at the top to import this. 
+```javascript
+require("solidity-coverage")
+```
+
+<img width="791" alt="image" src="https://github.com/Rudrakshrawal/BlockChain/assets/144530387/5fbab949-7181-4e4c-b485-cd7b3e450450">
+
+
+### Check Gas price
+(OPTIONAL)
+
+Now while deploying a contract one must check the requirement of the gas price by his/her solidity file. For this we will require to install the package
+
+```npm install --save-dev hardhat-gas-reporter ```
+
+In the ```hardhat.config.js``` file at the top we will be importing the hardhat gas reporter through ```require("hardhat-gas-reporter")``` and then add a segment in the ```module.exports``` segment
+```javascript
+  gasReporter: {
+    enabled: true,
+  }
+```
+
+When the person will run the ```npx hardhat test``` the gas price will automatically show up.
+
+<img width="791" alt="image" src="https://github.com/Rudrakshrawal/BlockChain/assets/144530387/6e0d06c1-b37e-48a4-8b86-34c253421752">
+
 
 ### Deploying Contracts
 

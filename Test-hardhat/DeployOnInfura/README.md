@@ -1,4 +1,3 @@
----
 
 # Election Smart Contract
 
@@ -6,7 +5,7 @@ This smart contract, written in Solidity, enables the management of an election 
 
 ## Contract Structure
 
-The `Election` contract consists of the following components:
+The ````Election``` contract consists of the following components:
 
 - **Candidate Struct**: Defines the structure of a candidate, including their ID, name, and vote count.
 

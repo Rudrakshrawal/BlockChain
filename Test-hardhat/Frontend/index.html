@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting DApp</title>
+    <style>
+        body {
+            background-color: #000000;
+            /* Black background */
+            color: #ffffff;
+            /* White text */
+            font-family: Arial, sans-serif;
+            /* Font family */
+            text-align: center;
+            /* Center align text */
+        }
+
+        h1 {
+            color: #8A2BE2;
+            /* Purpleish theme for header */
+            font-size: 36px;
+            /* Larger font size for heading */
+            font-weight: bold;
+            /* Bold font weight for heading */
+            text-shadow: 2px 2px 4px #000000;
+            /* Text shadow for heading */
+            margin-bottom: 20px;
+            /* Bottom margin for heading */
+        }
+
+        select,
+        button {
+            background-color: #800080;
+            /* Purpleish theme for buttons */
+            color: #ffffff;
+            /* White text for buttons */
+            border: none;
+            /* Remove button border */
+            padding: 10px 20px;
+            /* Add padding to buttons */
+            margin: 10px;
+            /* Add margin to buttons */
+            cursor: pointer;
+            /* Change cursor to pointer on hover */
+            font-size: 16px;
+            /* Font size for buttons */
+            border-radius: 5px;
+            /* Add border-radius for buttons */
+        }
+
+        select:hover,
+        button:hover {
+            opacity: 0.8;
+            /* Reduce opacity on hover */
+        }
+
+        #votesDisplay {
+            font-size: 24px;
+            /* Larger font size for votes display */
+            font-style: italic;
+            /* Italic style for votes display */
+            margin-top: 20px;
+            /* Add top margin to votes display */
+        }
+
+        table {
+            margin: 20px auto;
+            /* Center align table */
+            border-collapse: collapse;
+            /* Collapse table borders */
+            width: 80%;
+            /* Set table width */
+        }
+
+        th,
+        td {
+            border: 1px solid #ffffff;
+            /* White border for table cells */
+            padding: 10px;
+            /* Add padding to table cells */
+        }
+
+        th {
+            background-color: #800080;
+            /* Purpleish theme for table header */
+            color: #ffffff;
+            /* White text for table header */
+        }
+
+        td {
+            background-color: #8A2BE2;
+            /* Purpleish theme for table cells */
+            color: #ffffff;
+            /* White text for table cells */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Election</h1>
+    <h2>[ Please connect your metamask wallet before proceeding ]
+    </h2>
+    <p>Choose your candidate:</p>
+    <select id="candidateSelect">
+        <!-- Options will be populated by JavaScript -->
+    </select>
+    <button onclick="vote()">Vote</button>
+    <button onclick="getCandidateVotes()">Check Votes</button> <!-- New button -->
+    <button id="connectButton">Connect MetaMask</button>
+    <button id="connectedButton" style="display:none;">Connected</button>
+
+    <div id="votesDisplay"></div> <!-- Display votes here -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Candidate</th>
+                <th>Votes</th>
+            </tr>
+        </thead>
+        <tbody id="votesTableBody">
+            <!-- Table rows will be populated by JavaScript -->
+        </tbody>
+    </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+
+</html>

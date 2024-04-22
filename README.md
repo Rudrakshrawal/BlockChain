@@ -1,11 +1,12 @@
 
+---------
 # Election Smart Contract
 
 This smart contract, written in Solidity, enables the management of an election by allowing users to vote for candidates. Below is an overview of the functionalities and structure of the contract:
 
 ## Contract Structure
 
-The ````Election``` contract consists of the following components:
+The ```Election``` contract consists of the following components:
 
 - **Candidate Struct**: Defines the structure of a candidate, including their ID, name, and vote count.
 
@@ -74,5 +75,5 @@ Ensure that the contract is deployed on a blockchain network compatible with Sol
 
 For more information on deploying and interacting with Ethereum smart contracts, refer to the Ethereum documentation and web3.js documentation.
 
----
+----
 

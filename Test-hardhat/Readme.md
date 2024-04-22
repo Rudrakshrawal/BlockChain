@@ -106,6 +106,11 @@ npx hardhat compile
 We will also be trying to check the usage of the test i.e how many % of functions are being used. To check that we first will be needing to install the package ```npm install --save-dev solidity-coverage ```
 
 
+To run :
+```
+ npx hardhat coverage
+```
+
 
 After this we will be adding a simple line in the ```hardhat.config.js``` file at the top to import this. 
 ```javascript
@@ -140,17 +145,25 @@ When the person will run the ```npx hardhat test``` the gas price will automatic
 For this next step you will have to configure your ``` hardhat.config.js ``` file 
 
 
-<img width="767" alt="image" src="https://github.com/Rudrakshrawal/BlockChain/assets/144530387/63f4de32-6f8e-4cee-b6ef-b9c5196c0ee8">
+<img width="595" alt="image" src="https://github.com/Rudrakshrawal/BlockChain/assets/144530387/edc4f69b-812a-495f-9e26-c6c86cee0f91">
+
+You can install `npm install dotenv` to generate a dotenv config file where you can store your sensitive information by declaring variables.
+After that you can import that dot env file in your `hardhat.config.js` and use the variables declared in the `.env` file as i did using `process.env.variableName` .
 
 
 
 #### Deploy your contracts using Hardhat:
 ```bash
-npx hardhat run --network <network_name> scripts/deploy.js
+npx hardhat run --network <network_name> ignition/modules/deploy.js
 ```
 
 Replace `<network_name>` with the name of the network you want to deploy to, such as `sepolia` or `mainnet`.
 
+
+In this project's case:
+```bash
+npx hardhat run --network sepolia ignition/modules/deploy.js
+```
 Now you're ready to deploy your contracts using Hardhat!
 
 ----------

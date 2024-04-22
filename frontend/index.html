@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleStorage DApp</title>
+</head>
+<body>
+    <h1>SimpleStorage DApp</h1>
+
+    <h2>Store Favorite Number</h2>
+    <label for="numberInput">Enter Favorite Number:</label>
+    <input type="number" id="numberInput">
+    <button onclick="storeNumber()">Store Number</button>
+
+    <h2>Add Person</h2>
+    <label for="nameInput">Enter Name:</label>
+    <input type="text" id="nameInput">
+    <label for="personNumberInput">Enter Favorite Number:</label>
+    <input type="number" id="personNumberInput">
+    <button onclick="addPerson()">Add Person</button>
+
+    <h2>Retrieve Favorite Number</h2>
+    <button onclick="retrieveNumber()">Retrieve Number</button>
+    <p>Favorite Number: <span id="favoriteNumber"></span></p>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

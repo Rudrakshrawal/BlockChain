@@ -51,7 +51,11 @@ election.vote(candidateId);
 
 - **Deploy**: To deploy the smart contracts to a network, run:
   ```
-  npx hardhat run scripts/deploy.js --network <network-name>
+  npx hardhat run ignition/modules/deploy.js --network <network-name>
+  ```
+  in this contract's case
+  ```
+  npx hardhat run ignition/modules/deploy.js --network sepolia
   ```
 
 - **Test**: To run the tests, execute:
@@ -68,7 +72,10 @@ election.vote(candidateId);
   ```
   npx hardhat help
   ```
-
+  ------------
+  ### Doing this you will successfully create a smart contract, its deploy and test script using javascript, you will be able to install a framework available on the internet (in this case hardhat) which will help you to compile your project and deploy it on the specified network (in this case sepolia). You will get the transaction hash value which can be used by you to to check the real time implementation of consensus mechanism, the mining of block, the gas fees, and many more . You can check this on [Etherscan](etherscan.io).
+-------------
+  
 ## Note
 
 Ensure that the contract is deployed on a blockchain network compatible with Solidity version 0.8.7 or higher.

@@ -1,18 +1,23 @@
-// require("@nomicfoundation/hardhat-toolbox");
+// To deploy on Your choice of network, in this case i used sepolia
 
+// require("./.env")
+
+// require("@nomicfoundation/hardhat-toolbox");
 // module.exports = {
 //   solidity: "0.8.7", // Set the desired Solidity version
 //   networks: {
 //     sepolia: {
-//       url: `https://sepolia.infura.io/v3/d45290eb3e824dfb918fe2ce3296fe84`,
+//       url: `https://sepolia.infura.io/v3/myAPIKey`, //Repalce with 
 //       accounts: [
-//         "abd7dc2e6aedf266c6779d94567a9691600cd56284edbb0d93cffbf7bc8b7136", // Replace this with your actual private key
+//         "myPrivateKet", // Replace this with your actual private key
 //       ],
 //     },
 //   },
 // };
 
 
+
+//To deploy on ganache client
 
 /**
  * @type import('hardhat/config').HardhatUserConfig

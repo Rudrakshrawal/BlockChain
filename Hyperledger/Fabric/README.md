@@ -101,7 +101,7 @@ Before starting a network do make sure that you put down any previous network if
 
 ### 6. Interact with the Chaincode
 
-#### Query All Assets
+#### Query All Assets (will work after defining paths given below to use peer from the binaries and to access org 1's necessities)
 
 ```bash
 peer chaincode query -C mychannel -n basic -c '{"Args":["GetAllAssets"]}'
